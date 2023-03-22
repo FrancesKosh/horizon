@@ -2,7 +2,7 @@ Feature: PosLoginPage
 
   Log in to pos successfully
 
-  @Horizon
+  //@Horizon
   Scenario: Happy Path to log in to pos
     Given I am on the pos home page "https://pos-staging.tissl.com/#/pos/login"
     And I enter valid user name

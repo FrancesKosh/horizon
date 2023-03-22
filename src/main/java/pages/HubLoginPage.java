@@ -18,6 +18,8 @@ public class HubLoginPage extends BasePage {
 
     @FindBy(css = "button[class='btn btn-primary']") private WebElement loginButtonLocator;
 
+
+
 // Methods (doing part)
     public void enterUserName(String username) {
         usernameLocator.sendKeys(username);
@@ -31,5 +33,7 @@ public class HubLoginPage extends BasePage {
     public void clickOnLoginButton(){
        loginButtonLocator.click();
     }
+
+
 
 }

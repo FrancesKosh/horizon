@@ -1,8 +1,9 @@
-Feature: PosLoginPage
+@Horizon
+Feature: HubLoginPage
 
-  Log in to pos successfully
+  Log in to hub successfully
 
-  @Horizon
+  //@Horizon
   Scenario: Happy Path to log in to hub
     Given I am on the pos home page "https://hub-staging.tissl.com"
     And I enter valid user name
