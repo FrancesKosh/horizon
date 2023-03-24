@@ -12,28 +12,29 @@ public class HubLoginPage extends BasePage {
 
     //Locators (finding part)
 
-    @FindBy(css = "input[formcontrolname='username']") private WebElement usernameLocator;
+    @FindBy(css = "input[formcontrolname='username']")
+    private WebElement usernameLocator;
 
-    @FindBy(css = " input[formcontrolname='password']") private WebElement passwordLocator;
+    @FindBy(css = " input[formcontrolname='password']")
+    private WebElement passwordLocator;
 
-    @FindBy(css = "button[class='btn btn-primary']") private WebElement loginButtonLocator;
+    @FindBy(css = "button[class='btn btn-primary']")
+    private WebElement loginButtonLocator;
 
 
-
-// Methods (doing part)
+    // Methods (doing part)
     public void enterUserName(String username) {
         usernameLocator.sendKeys(username);
     }
 
-        public void enterPassword(String password){
-            passwordLocator.sendKeys(password);
+    public void enterPassword(String password) {
+        passwordLocator.sendKeys(password);
 
     }
 
-    public void clickOnLoginButton(){
-       loginButtonLocator.click();
+    public void clickOnLoginButton() {
+        loginButtonLocator.click();
     }
-
 
 
 }

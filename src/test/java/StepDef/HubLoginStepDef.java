@@ -5,7 +5,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HubLoginPage;
-import pages.PosLoginPage;
+
+
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class HubLoginStepDef extends BaseUtil {
     private BaseUtil base;
@@ -47,7 +49,7 @@ public class HubLoginStepDef extends BaseUtil {
     public void home_page(String string) {
         // Write code here that turns the phrase above into concrete actions
         HubLoginPage hubLoginPage = new HubLoginPage(base.driver);
-       //assertThat(hubLoginPage.);
+       //assertThat(hubLoginPage.homePage(screen), is(true));
     }
 
 }

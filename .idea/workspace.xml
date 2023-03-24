@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe08f907-35cc-4e58-b062-9c30e164d561" name="Changes" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDef/HubLoginStepDef.java" afterDir="false" />
+    <list default="true" id="fe08f907-35cc-4e58-b062-9c30e164d561" name="Changes" comment="third commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HubLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HubLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PosLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PosLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/featureFiles/HubLoginPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/featureFiles/HubLoginPage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/featureFiles/PosLoginPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/featureFiles/PosLoginPage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/Hook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/PosLoginStepDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/HubLoginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/HubLoginStepDef.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +55,10 @@
       <recent name="base" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Happy Path to log in to hub">
+  <component name="RunManager" selected="JUnit.Testrunner">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="horizon" />
+      <module name="horizonHubLogin" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -76,7 +74,7 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/featureFiles/HubLoginPage.feature" />
       <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="horizon" />
+      <module name="horizonHubLogin" />
       <option name="NAME_FILTER" value="^Happy Path to log in to hub$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Happy Path to log in to hub$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Happy Path to log in to hub" />
@@ -92,7 +90,7 @@
       </method>
     </configuration>
     <configuration name="Testrunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="horizon" />
+      <module name="horizonHubLogin" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="StepDef.*" />
@@ -106,10 +104,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="horizonHubLogin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="horizonHubLogin" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Happy Path to log in to hub" />
         <item itemvalue="JUnit.Testrunner" />
+        <item itemvalue="Cucumber Java.Scenario: Happy Path to log in to hub" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -137,12 +148,27 @@
       <option name="project" value="LOCAL" />
       <updated>1679354654232</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third commit">
+      <created>1679505911823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679505911823</updated>
+    </task>
+    <task id="LOCAL-00004" summary="third commit">
+      <created>1679505993456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679505993456</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
 </project>
