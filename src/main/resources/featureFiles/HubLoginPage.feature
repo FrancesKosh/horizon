@@ -8,5 +8,5 @@ Feature: HubLoginPage
     And I enter valid user name "Frances"
     And I enter valid password "Sejlokosh80"
     When I click on the log in button
-    Then "I should be on "home" page "HORIZON Restaurant"
+    Then I should be on "HORIZON Restaurant" page
 

@@ -21,6 +21,9 @@ public class HubLoginPage extends BasePage {
     @FindBy(css = "button[class='btn btn-primary']")
     private WebElement loginButtonLocator;
 
+   // @FindBy(css = "div[class='ng-star-inserted']")
+    //private WebElement horizonRestaurantMessage;
+
 
     // Methods (doing part)
     public void enterUserName(String username) {
@@ -36,5 +39,8 @@ public class HubLoginPage extends BasePage {
         loginButtonLocator.click();
     }
 
+    //public String getMessage(){
+       // return horizonRestaurantMessage.getText();
+    }
 
-}
+
