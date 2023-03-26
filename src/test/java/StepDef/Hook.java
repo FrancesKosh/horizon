@@ -33,7 +33,7 @@ public class Hook extends BaseUtil {
         DesiredCapabilities dp = new DesiredCapabilities();
         dp.setCapability(ChromeOptions.CAPABILITY, options);
         options.merge(dp);
-        base.driver = new ChromeDriver();
+        base.driver = new ChromeDriver(options);
 
         //  public class Hook extends BaseUtil {
 
