@@ -13,6 +13,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class Hook extends BaseUtil {
     private BaseUtil base;
@@ -26,6 +27,7 @@ public class Hook extends BaseUtil {
     }
 
     @Before
+    //  public class Hook extends BaseUtil {
     public void innitialize() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -34,8 +36,9 @@ public class Hook extends BaseUtil {
         dp.setCapability(ChromeOptions.CAPABILITY, options);
         options.merge(dp);
         base.driver = new ChromeDriver(options);
-
-        //  public class Hook extends BaseUtil {
+        base.driver.manage().window().maximize();
+        base.driver.get("https://hub-staging.tissl.com");
+        base.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
 

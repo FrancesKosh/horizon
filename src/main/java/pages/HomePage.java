@@ -9,10 +9,15 @@ public class HomePage extends BasePage{
         super(driver);
     }
 
+    @FindBy(css="div[class ='first-column']") private WebElement homePageLocator;
     @FindBy(css= "div[class='report-text']")
     private WebElement reportCentreLocator;
 
 
+
+    public boolean IsHomePageDisplayed() {
+        return homePageLocator.isDisplayed();
+    }
 
     public void clickOnReportCentre(){reportCentreLocator.click();}
 }

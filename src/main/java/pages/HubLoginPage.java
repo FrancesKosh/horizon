@@ -21,17 +21,18 @@ public class HubLoginPage extends BasePage {
     @FindBy(css = "button[class='btn btn-primary']")
     private WebElement loginButtonLocator;
 
+    @FindBy(css="select[formcontrolname ='site']") private WebElement selectYourOrganisationLocator;
    // @FindBy(css = "div[class='ng-star-inserted']")
     //private WebElement horizonRestaurantMessage;
 
 
     // Methods (doing part)
     public void enterUserName(String username) {
-        usernameLocator.sendKeys(username);
+        usernameLocator.sendKeys("Testqaa");
     }
 
     public void enterPassword(String password) {
-        passwordLocator.sendKeys(password);
+        passwordLocator.sendKeys("Testqaa");
 
     }
 
@@ -39,6 +40,9 @@ public class HubLoginPage extends BasePage {
         loginButtonLocator.click();
     }
 
+    public void SelectYourOrganisation(){
+        selectYourOrganisationLocator.click();
+    }
     //public String getMessage(){
        // return horizonRestaurantMessage.getText();
     }
