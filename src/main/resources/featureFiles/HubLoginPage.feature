@@ -4,10 +4,10 @@ Feature: HubLoginPage
 
   @Horizon
   Scenario Outline: Happy Path to log in to hub
-    Given I am on the hub home page   "https://hub-staging.tissl.com"
+    Given I am on the hub home page
    Then I verify that homepage is visible successfully
-    And I enter valid "<username>"
-    And I enter valid "<password>"
+    And I enter valid username
+    And I enter valid password
     And I select Gordon Ramsey Holding - Street Burger
     When I click on the log in button
     Then "Testqaa" should be displayed

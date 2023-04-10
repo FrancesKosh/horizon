@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe08f907-35cc-4e58-b062-9c30e164d561" name="Changes" comment="Update commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/GRHPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HubLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HubLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/PropertyReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/featureFiles/HubLoginPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/featureFiles/HubLoginPage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/Hook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/HubLoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/HubLoginStepDefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680557373736</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update commit">
+      <created>1680935861588</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680935861588</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

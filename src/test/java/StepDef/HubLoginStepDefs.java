@@ -6,13 +6,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import pages.*;
-//import utilities.PropertyReader;
-
+import utilities.PropertyReader;
 import java.io.IOException;
 import java.time.Duration;
-
+import java.util.Properties;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasValue;
@@ -21,7 +23,7 @@ public class HubLoginStepDefs extends BaseUtil {
     private BaseUtil base;
     private HubLoginPage hubLoginPage;
     private HubAssertionPage hubAssertionPage;
-//    private PropertyReader propertyReader;
+   private PropertyReader propertyReader;
 
     public HubLoginStepDefs(BaseUtil base) {
         this.base = base;
@@ -34,13 +36,13 @@ public class HubLoginStepDefs extends BaseUtil {
     }
 
     @Given("I am on the hub home page   {string}")
-    public void i_am_on_the_hub_home_page(String Url) {
-        //base.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-//        PropertyReader propertyReader = new PropertyReader();
-//        base.driver.get(propertyReader.getHubUrl());
+    public void i_am_on_the_hub_home_page(String Url) throws IOException {
+        base.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         base.driver.manage().window().maximize();
-        base.driver.get("https://hub-staging.tissl.com");
+        PropertyReader propertyReader = new PropertyReader();
+        base.driver.get(propertyReader.getHubUrl());
 
+//        base.driver.get("https://hub-staging.tissl.com");
     }
 
     @Given("I am on the hub home page")
@@ -55,16 +57,16 @@ public class HubLoginStepDefs extends BaseUtil {
         assertThat(homePage.IsHomePageDisplayed(), equalTo(true));
     }
 
-    @Given("I enter valid user name {string}")
-    public void i_enter_valid_user_name(String username) {
-        HubLoginPage hubLoginPage = new HubLoginPage(base.driver);
-        hubLoginPage.enterUserName(username);
+    @And("I enter valid username")
+    public void iEnterValidUsername(String uName) {
+        initPages();
+        hubLoginPage.enterUserName(uName);
     }
 
-    @Given("I enter valid password {string}")
-    public void i_enter_valid_password(String password) {
-        HubLoginPage hubLoginPage = new HubLoginPage(base.driver);
-        hubLoginPage.enterPassword(password);
+    @And("I enter valid password")
+    public void iEnterValidPassword(String pWord) {
+        initPages();
+        hubLoginPage.enterPassword(pWord);
     }
 
     @When("I click on the log in button")
@@ -75,10 +77,9 @@ public class HubLoginStepDefs extends BaseUtil {
 
     @And("I select Gordon Ramsey Holding - Street Burger")
     public void iSelectGordonRamseyHoldingStreetBurger() {
-        // HubLoginPage hubLoginPage = new HubLoginPage(base.driver);
-        Select select = new Select(hubLoginPage.SelectYourOrganisation(),
-                //base.driver.findElement(By.cssSelector("div[class ='middle-content ng-tns-c71-1']")));
-               hubLoginPage.SelectYourOrganisation().selectByValue("1"));
+        Select select = new Select(hubLoginPage.SelectYourOrganisation(By.className("div[class ='middle-content ng-tns-c71-1']"));
+               //base.driver.findElement(By.cssSelector("div[class ='middle-content ng-tns-c71-1']")));
+//               hubLoginPage.SelectYourOrganisation().selectByValue("1"));
     }
     @Then("{string} should be displayed")
     public void shouldBeDisplayed(String Testqaa) {
@@ -130,7 +131,8 @@ public class HubLoginStepDefs extends BaseUtil {
     @When("select the first listing")
     public void select_the_first_listing() {
         SiteRelationshipPage siteRelationshipPage = new SiteRelationshipPage(base.driver);
-      Select select = new Select(siteRelationshipPage.);
+//     WebDriver siteRelationshipPage = new ChromeDriver();
+//        Select select = new Select(siteRelationshipPage.findElement(By.id("1")));
 
 //    }
 //
@@ -150,13 +152,9 @@ public class HubLoginStepDefs extends BaseUtil {
 //    }
 
 
-    ///////////////////////////////////
-
-
-    @And("I enter valid {string}")
-    public void iEnterValid(String arg0) {
 
     }
 
 
 }
+
